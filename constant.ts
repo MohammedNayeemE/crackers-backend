@@ -1,2 +1,1 @@
-
-const TOKEN_EXPIRY =  60*60*1000;
+export const TOKEN_EXPIRY =  30*24*60*60*1000;

@@ -1,6 +1,6 @@
 import express , {Router , Response} from 'express';
 import { router_module } from '../lib/util';
-
+import { DeveloperController } from '../controllers';
 
 const BASE_ROUTE : string = '/test';
 const router:Router = express.Router();
@@ -15,7 +15,8 @@ router.get('/easter-egg' , (_ , res : Response) =>{
         `
     );
 });
-
+//@ts-ignore
+router.get('/get-everything' , DeveloperController.GETALL);
 
 const MODULE : router_module = {
     BASE_ROUTE , 

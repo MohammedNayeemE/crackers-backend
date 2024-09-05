@@ -1,14 +1,14 @@
 import express , {Router} from 'express';
 import { router_module } from '../lib/util';
 import { verifyToken } from '../middleware/verifyToken';
-
+import { UserController } from '../controllers';
+import { validateUser } from '../validator/validate';
 const router : Router = express.Router();
 
 const BASE_ROUTE : string = '/user';
 
 router.post('/signin');
-router.post('/signup');
-
+router.post('/signup' , validateUser ,  UserController.signup);
 router.get('/get-items/:categoryID');
 router.get('/get-categories');
 router.get('/get-cart-items' , verifyToken);

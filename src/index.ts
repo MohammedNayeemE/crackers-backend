@@ -27,6 +27,7 @@ app.use(AdminRoute.BASE_ROUTE , AdminRoute.router);
 app.use(UserRoute.BASE_ROUTE , UserRoute.router);
 app.use(DeveloperRoute.BASE_ROUTE , DeveloperRoute.router);
 const port  = process.env.PORT || 6969 ;
+
 app.listen(port  , () =>{
     console.log(`[server :)] don't worry everything is fine here`);
     

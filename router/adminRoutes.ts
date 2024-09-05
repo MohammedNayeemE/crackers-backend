@@ -9,18 +9,13 @@ const BASE_ROUTE : string = '/admin';
 
 router.post('/signin' , validateAdmin , AdminController.adminSignIn);
 router.post('/signup' , validateAdmin , AdminController.adminSignUp);
+router.get('/get-orders/:ck' , AdminController.getOrderStatus);
+router.get('/get-items/:c_id' , AdminController.getItems);
+router.get('/get-categories' , AdminController.get_categories);
+router.post('/add-items'  , AdminController.add_item); 
+router.post('/add-category' , AdminController.add_category);
 
-router.get('/get-orders-pending');
-router.get('/get-orders-complete');
-router.get('/get-items/:categoryID');
-router.get('/get-categories');
-
-
-router.post('/add-items'); 
-router.post('/add-category');
-
-router.put('/update-items/:itemID');
-//router.put('/update-profile/:adminID');
+router.put('/update-items/:item_id' , AdminController.update_items);
 
 
 const MODULE : router_module = {

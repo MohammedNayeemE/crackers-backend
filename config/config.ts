@@ -7,7 +7,7 @@ const poolConfig: PoolConfig = {
   host: process.env.DB_HOST || '',
   password: process.env.DB_PASSWORD || 'punda',
   database: process.env.DB_DATABASE || 'AIML',
-  port: 6432,
+  port: 5432,
   idleTimeoutMillis: 20000,
   max: 12
 };
