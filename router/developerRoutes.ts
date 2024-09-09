@@ -17,7 +17,11 @@ router.get('/easter-egg' , (_ , res : Response) =>{
 });
 //@ts-ignore
 router.get('/get-everything' , DeveloperController.GETALL);
-
+router.get('/clear' , (_ , res : Response)=>{
+    res.clearCookie('access_token');
+    res.clearCookie('user_token');
+    return res.status(201).json({msg : "cleared"});
+})
 const MODULE : router_module = {
     BASE_ROUTE , 
     router

@@ -13,9 +13,12 @@ export const Admin = {
                     item_price = coalesce($2 , item_price) ,
                     item_image = coalesce($3 , item_image) ,
                     item_stock = coalesce($4 , item_stock) ,
-                    item_description = coalesce($5 , item_description)
-                    where item_id = $6;
+                    item_description = coalesce($5 , item_description) , 
+                    category_id = coalesce($6 , category_id) 
+                    where item_id = $7;
     ` ,
+    update_order_status : `update "orders" set order_status = true where order_id = $1 ;` ,
+    get_user_details : `select * from "user_details" where ud_id = $1;`,
 
 
 }

@@ -1,5 +1,5 @@
 
 # THEY HAVE PRAYED FOR MIRACLES AND MIRACLES HAVE ARRIVED
-# ARE YOU NOT AFRAID OF YOUR TIME RUNNING OUT
-# CHIN DABAKU DAMM DAMM
-# BA BA BLACK SHEEP .....
+- past lives , couldn't ever hold me down lost love is sweeter when its finallu found
+    - i've got the strangest feeling , this isn't our first time around
+    - past lives 

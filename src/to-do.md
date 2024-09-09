@@ -1,3 +1,2 @@
-- test - routes
-- complete admin controllers
-- complete auth
+
+user - routes
